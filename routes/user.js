@@ -17,7 +17,6 @@ app.get("/", function(req, res, next){
 app.post("/login", function(req, res, next){
     let username = req.body.username;
     let password = req.body.password;
-    console.log(`token: ${res.locals.csrfToken} === formToken: ${req.body._csrf}`);
     checkLogin(username, password, req, res);
 });
 
