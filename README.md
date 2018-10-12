@@ -1,5 +1,5 @@
 # hackerTasks
-hackerTasks is a checklist of the tasks you need to perform when attacking a web application. The checklist copied from https://github.com/1lastBr3ath/tasks & http://mdsec.net/wahh/tasks.html.
+hackerTasks is a checklist of the tasks you need to perform when attacking a web application. The checklist is copied from https://github.com/1lastBr3ath/tasks & http://mdsec.net/wahh/tasks.html.
 
 # Key Features
 - Checklist is an instance of a website, you can have multiple websites and their own instance of checklist.
