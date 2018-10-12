@@ -29,3 +29,5 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
   ![screenshot2](https://user-images.githubusercontent.com/22111782/46867252-f72e4180-ce41-11e8-9a48-39af0e739d66.png)
   ![screenshot3](https://user-images.githubusercontent.com/22111782/46867262-01e8d680-ce42-11e8-8226-7b1aff1b17d0.png)
 
+# Contributions
+  You're always welcome to contribute to this app if you ever wish to. 
