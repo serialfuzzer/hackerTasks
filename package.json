@@ -2,9 +2,6 @@
   "name": "hackertasks",
   "version": "1.0.0",
   "description": "hackerTasks is a checklist of the tasks you need to perform when attacking a web application.",
-  "scripts": {
-    "launch": "nodemon app.js"
-  },
   "author": "Suyogya Khanal",
   "license": "ISC",
   "dependencies": {
