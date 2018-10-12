@@ -1,0 +1,11 @@
+<%- include('partials/head.ejs') %>   
+<% if (!loggedIn) { %>
+    <%- include('partials/navbar.ejs') %>
+    <%- include('partials/landingbody.ejs') %>
+    <%- include('partials/footer.ejs') %>  
+<% } else { %>
+    <%- include('partials/navbarLogged.ejs') %>
+    <%- include('partials/dashboardbody.ejs') %>
+    <%- include('partials/footer.ejs') %>
+<% } %>
+

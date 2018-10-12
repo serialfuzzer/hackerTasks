@@ -1,0 +1,144 @@
+* {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.heading {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+}
+
+body{
+    margin-top: 90px;
+}
+
+.navbar {
+    background-color: #FFF;
+    color: #666;
+    opacity: 0.9;
+}
+
+.nav-link {
+    border-bottom: 2px solid transparent;
+}
+
+
+a {
+    outline: none;
+}
+
+footer{
+    background: transparent;
+}
+
+.bdgs {
+    background: transparent;
+}
+
+.f{
+    display:block;
+    
+}
+
+.d-block {
+    display: block;
+}
+
+.wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.item{
+    margin-bottom: 5px;
+}
+.indent {
+    margin-left: 25px;
+}
+
+.btn{
+    white-space: normal;
+}
+
+.text-custom {
+    color: #FFF;
+}
+.text-custom:hover{
+    color: #666;
+}
+.sitename {
+    word-wrap: break-word;
+}
+
+
+.text-green {
+    color: #41FF00;
+}
+
+.logout i{
+    transition: all 0.6s;
+}
+
+.logout:hover i{
+    margin-left: 3px;
+}
+
+
+#content {
+    position: relative;
+    min-height: 500px;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#form {
+    max-width: 450px;
+}
+
+
+.link-item {
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+}
+
+.delete, .delete:hover, .delete:visited{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    font-size: 1.4em;
+    right:15px;
+    outline: none;
+    text-decoration: none;
+}
+
+.link-item:hover {
+    background: #333;
+}
+
+#pagination li a{
+    background: transparent;
+    border: black;
+    color: #FFF;
+}
+
+#pagination li a.active{
+    border: transparent;
+}
+
+.welcomeBox {
+    min-height: 320px;
+}
+
+.checklist{
+    transition: all 0.6s;
+}
+
+.list-group-item{
+    transition: background-color 0.6s;
+}

@@ -1,0 +1,78 @@
+<section id="content">
+    <div class="overlay">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-4 d-none d-lg-block">
+                    <h1 class="text-green display-4" style="font-weight: 700;">Welcome</h1>
+                    <p class="lead text-light ml-2 p-4">
+                        A web application for hackers that will ease
+                        <span class="text-green" style="font-weight: 600;">hacking the world</span> with sequential checklist of tasks you need to perform while assessing the victim application. 
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <div class="card bg-dark text-light" id="form">
+                        <div class="card-header">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-light border border-dark btf loginBtn active">
+                                    Login
+                                </button>
+                                <button class="btn btn-outline-light border border-dark regBtn btf">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body login">
+                            <form action="/user/login" method="post" >
+                                <input type="hidden" name="_csrf" value="<%=csrfToken;%>">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-prepend">
+                                            <div class="input-group-text bg-dark text-light"><i class="fas fa-user"></i></div>
+                                        </span>
+                                        <input type="text" name="username" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="input-group input-group-lg mt-2">
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-dark text-light"><i class="fas fa-lock"></i></div>
+                                            </span>
+                                            <input name="password" type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <input type="submit" class="btn btn-lg btn-outline-light my-2 btn-block" value="Login">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-body register collapse">
+                            <form action="/user/register" method="post">
+                                <input type="hidden" name="_csrf" value="<%=csrfToken;%>">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-prepend">
+                                            <div class="input-group-text bg-dark text-light"><i class="fas fa-user"></i></div>
+                                        </span>
+                                        <input name="username" type="text" class="form-control" placeholder="Username" id="registerUsername">
+                                    </div>
+                                    <div class="input-group input-group-lg mt-2">
+                                            <span class="input-group-prepend">
+                                                <div class="input-group-text bg-dark text-light"><i class="fas fa-lock"></i></div>
+                                            </span>
+                                            <input name="password" type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="input-group input-group-lg mt-2">
+                                        <span class="input-group-prepend">
+                                            <div class="input-group-text bg-dark text-light"><i class="fas fa-lock"></i></div>
+                                        </span>
+                                        <input name="password1" type="password" class="form-control" placeholder="Password again">
+                                    </div>
+                                    <input type="submit" class="btn btn-lg btn-outline-light my-2 btn-block" value="Register">
+                                </div>
+                            </form>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer text-center" style="font-size:0.7rem;">
+    <strong>Designed and developed with <i class="fas fa-heart" style="color:red;"></i> by <span class="text-green">Suyogya</span></strong> 
+</div>

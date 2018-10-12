@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet"> 
+    <!-- Font awesome and bootstrap's css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>hackerTasks</title>
+</head>
+<body class="bg-dark text-light">   
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top py-4">
+    <div class="container">
+        <a href="" class="navbar-brand">
+                <h3 class="d-inline align-middle"> <span class="text-green">hacker</span>Tasks </h3>
+        </a>
+        <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active logout">Logout <i class="fas fa-sign-out-alt"></i></a></li>
+                    
+                </ul>
+        </div>
+    </div>
+</nav>
+    <section id="content">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-dark text-light py-5 welcomeBox">
+                        <div class="card-body ml-4">
+                            <h5>Welcome, <span class="text-green">&lt;username /&gt;</span></h5>
+                            <button class="btn btn-outline-light btn-sm"><i class="fas fa-plus"></i> <strong>Add a site</strong></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group py-5">
+                        <div class="bg-dark">
+                            <h3 class="text-green text-center">Your sites</h3>
+                        </div>
+                        <li class="text-light list-group-item link-item"><a href="list.html" class="btn btn-outline-light" style="max-width:90%; overflow-x:hidden;">https://facebook.com</a> <a href="#" class="delete">&times;</a></li>
+                        <li class="text-light list-group-item link-item"><a href="list.html" class="btn btn-outline-light" style="max-width:90%; overflow-x:hidden;">https://twitter.com</a><a href="#" class="delete">&times;</a></li>
+                        <li class="text-light list-group-item link-item"><a href="list.html" class="btn btn-outline-light" style="max-width:90%; overflow-x:hidden;">https://hackerone.com</a><a href="#" class="delete">&times;</a></li>
+                        <li class="text-light list-group-item link-item"><a href="list.html" class="btn btn-outline-light" style="max-width:90%; overflow-x:hidden;">https://bugcrowd.com</a><a href="#" class="delete">&times;</a></li>
+                        <li class="text-light list-group-item link-item"><a href="list.html" class="btn btn-outline-light" style="max-width:90%; overflow-x:hidden;">https://php.net</a><a href="#" class="delete">&times;</a></li>
+                        <li class="text-light list-group-item link-item">
+                            <ul class="pagination pagination-sm" id="pagination">
+                                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">..</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
+</body>
+</html>
+
+

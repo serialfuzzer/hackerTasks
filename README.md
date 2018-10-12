@@ -19,6 +19,7 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
 # Running
   After all the dependencies are installed, it is quite easy to get the app running. Just follow the steps below:
   1. Go to the hackerTasks folder
-  2. Run `node app.js` in the terminal
-  3. Launch http://localhost:8009 or http://0.0.0.0:8009 in your web browser.
+  2. Go to the model/credentials.json and edit it to your mysql database username and password
+  3. Run `node app.js` in the terminal
+  4. Launch http://localhost:8009 or http://0.0.0.0:8009 in your web browser
   
