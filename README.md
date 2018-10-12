@@ -8,7 +8,7 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
 - The application supports login and registration
 
 # Installation
-  The application should be installed quite easily in linux operating systems if you already have Node.js  and npm installed. However, if you don't have Node.js and npm already installed, you can ([download](https://nodejs.org/en/download/)) and install it.
+  The application should be installed quite easily in linux operating systems if you already have Node.js  and npm installed. However, if you don't have Node.js and npm already installed, you can [download](https://nodejs.org/en/download/) and install it.
   
   Commands to install all the required dependencies
   ```
