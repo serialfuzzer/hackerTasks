@@ -17,7 +17,7 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
   ```
   
 # Running
-  After all the dependencies are installed, it is quite easy to get the app running. Just follow the steps:
+  After all the dependencies are installed, it is quite easy to get the app running. Just follow the steps below:
   1. Go to the hackerTasks folder
   2. Run `node app.js` in the terminal
   
