@@ -17,7 +17,7 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
   ```
   
 # Running
-  After all the dependencies are installed, it is quite easy to get the app running. Just follow the steps below:
+  After `npm install` is done, it is quite easy to get the app running. Make sure that mysql is installed and running in your system. Just follow the steps below and get the app running:
   1. Go to the hackerTasks folder
   2. Go to the model/credentials.json and edit it to your mysql database username and password
   3. Run `node app.js` in the terminal
