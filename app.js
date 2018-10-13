@@ -11,32 +11,23 @@ let app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-process.env.port = 8009;
+process.env.port = 8025;
 
 
 app.use(session({
     secret: 'keyboard cat',
-    resave: false,
+    resave: true,
     saveUninitialized: true
 }))
 
-app.use(csurf({
-    sessionKey: "session"
-}));
-
 app.use(function attachCSRFToken(req, res, next){
-    var token = req.csrfToken();
-    req.session["XSRF-TOKEN"] =  token;
+    var token = 0; // removed csrf protection while the templates were depending on it, so I didn't remove this middleware
     res.locals.csrfToken = token;
     next(); 
 });
 
 
-
 app.use("/", express.static(path.join(__dirname, "/public")));
-
-
-
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -46,8 +37,6 @@ let login = require("./routes/login");
 let user = require("./routes/user");
 let site = require("./routes/site");
 let list = require("./routes/list");
-
-
 
 
 app.use("/", login);
