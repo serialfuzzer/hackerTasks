@@ -16,7 +16,7 @@ process.env.port = 8009;
 
 app.use(session({
     secret: 'keyboard cat',
-    resave: true,
+    resave: false,
     saveUninitialized: true
 }))
 
