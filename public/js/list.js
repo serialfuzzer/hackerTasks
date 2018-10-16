@@ -1,3 +1,10 @@
+$(window).ready(function(){
+    $(".main").fadeIn();
+    $(".checklist").on("click", function(){
+        activateItem(this.id);
+    });
+});
+
 $("main").hide();
 
 
@@ -25,20 +32,6 @@ function update() {
     var site_id = $("#content").data("site");
     $.post(`/list/addlist/${site_id}`, {data: active_ids, _csrf: $("[data-token]").data("token")}, (data, status)=>{ console.log(status) });
 }
-
-$(window).ready(function(){
-    $(".main").fadeIn();
-    $(".checklist").on("click", function(){
-        activateItem(this.id);
-    });
-});
-
-
-
-function activeItem() {
-    var elements = $(".btn-outline-light");
-}
-
 
 
 function populate(objects, selector){
@@ -83,14 +76,12 @@ function populate(objects, selector){
 }
 
  
-function begin(){
-    console.log("HERE");
+(function begin(){
     $.get("/jsondata.json", function(data,success){
         populate(data, ".main");
     })
-}
+})();
 
-begin();
 
 
 
