@@ -26,6 +26,11 @@ app.use(function attachCSRFToken(req, res, next){
     next(); 
 });
 
+app.use(function (req, res, next){
+    res.set('Cache-Control', 'no-store');
+    next();
+  });
+
 
 app.use("/", express.static(path.join(__dirname, "/public")));
 

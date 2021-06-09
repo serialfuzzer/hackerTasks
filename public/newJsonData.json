@@ -1,0 +1,31 @@
+{
+  "title": "Checklist Title",
+  "checklist":{
+      "category": [{
+        "name": "Recon and analysis",  
+        "list":[
+          {
+              "name": "Map Visible Content",
+              "childrens": 0
+          },
+          {
+              "name": "Discover hidden & default content",
+              "childrens": 1,
+              "values": [
+                  {
+                    "name": "Try different User-agents to find differences in content",
+                    "childrens": 0
+                  },
+                  {
+                    "name": "Use wayback machine to find old, forgotten endpoints",
+                    "childrens": 0
+                  },
+                  {
+                    "name": "Use Shodan/Censys/ZoomEye to find similar endpoints",
+                    "childrens": 0
+                  }
+              ]
+          }]
+    }]
+  }   
+}

@@ -1,14 +1,18 @@
+/*
 $(window).ready(function(){
     $(".main").fadeIn();
-    $(".checklist").on("click", function(){
+    $(".checklist").on("click", 'a',function(){
         activateItem(this.id);
+        console.log("Clicked")
     });
+    
+    $("main").hide();
 });
-
-$("main").hide();
+*/
 
 
 function activateItem(id){
+    console.log(id);
         var element = `#${id}`;
         if($(element).hasClass("enabled")){ // if the button is already enabled
             $(element).toggleClass("btn-outline-dark");
@@ -58,9 +62,9 @@ function populate(objects, selector){
             for(var item in items){
                 if(items[item].indexOf("{[class]ml-3}") > -1){
                     var string = items[item].split("{[class]ml-3}")[1];
-                    prepared += `<li class="list-group-item bg-dark ml-3"> <a id="i${id++}" class="btn btn-outline-dark border checklist" style="margin-bottom:4px;white-space: normal;"> ${string}</a></li>`;
+                    prepared += `<li class="list-group-item bg-dark ml-3"> <a id="i${id++}" onclick="activateItem(this.id);" class="btn btn-outline-dark border checklist" style="margin-bottom:4px;white-space: normal;"> ${string}</a></li>`;
                 }else{
-                    prepared += `<li class="list-group-item bg-dark"> <a id="i${id++}" class="btn btn-outline-dark border checklist" style="margin-bottom:4px;white-space: normal;"> ${items[item]}</a></li>`;
+                    prepared += `<li class="list-group-item bg-dark"> <a id="i${id++}" onclick="activateItem(this.id);" class="btn btn-outline-dark border checklist" style="margin-bottom:4px;white-space: normal;"> ${items[item]}</a></li>`;
                 }
             }
         }

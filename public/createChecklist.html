@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create A Checklist</title>
+</head>
+<body>
+    
+    <h1>Create Checklist for hackerTasks</h1>
+    <div class="checklistCreator">
+        <div class="title">
+            <input type="text" class="titleText" placeholder="Enter the title">
+            <button id="confirmTitle">Add Title</button>
+        </div>
+    </div>
+    
+    <div class="preview">
+
+    </div>
+    <div class="categories">
+
+    </div>
+    <div class="addItem">
+
+    </div>
+    <script>
+        var  addItem = "";
+        var checklist = {
+            checklist: {
+                category: []
+            }
+        }
+        var preview = document.querySelector(".preview");
+        document.querySelector("#confirmTitle").addEventListener("click", clicked);
+        function clicked() {
+            addTitle();
+        };
+
+        function addTitle(){
+            document.querySelector("#confirmTitle").disabled = true;
+            checklist["title"] = document.querySelector(".titleText").value;
+            console.log(checklist);
+            addCategoryPopulate();
+        }
+        
+        
+        function addCategory(){
+            checklist["checklist"]["category"].push({
+                "name": document.querySelector("#addCategoryTextBox").value,
+                "list": []
+            });
+            
+            console.log(JSON.stringify(checklist));
+            displayCategories();
+        }
+       
+        function addListItem(category, type){
+            if(type=="parent"){
+                checklist["checklist"]
+            }
+            if(type=="child"){
+
+            }
+        }
+
+        function addCategoryPopulate(){
+            var addCategoryTextBox = document.createElement("input");
+            var submitButton = document.createElement("button");
+            addCategoryTextBox.type="text";
+            addCategoryTextBox.placeholder = "Add Category";
+            addCategoryTextBox.id="addCategoryTextBox";
+            submitButton.class="addCategoryConfirm";
+            submitButton.innerHTML = "Add category";
+            submitButton.addEventListener("click", addCategory);
+            preview.appendChild(addCategoryTextBox);
+            preview.appendChild(submitButton);
+        }
+
+        function displayCategories(){
+            var categories = document.querySelector(".categories");
+            categories.innerHTML = "";
+            var select = document.createElement("select");
+            select.id = "categories";
+            for(category of checklist["checklist"]["category"]){
+                let option = document.createElement("option");
+                let text = document.createTextNode(category["name"]);
+                option.value = category["name"];
+                option.appendChild(text);
+                select.appendChild(option);
+                
+            }
+            select.addEventListener("change",displayAddItemOptions);
+
+            console.log(select);
+            categories.appendChild(select);
+        }
+        function displayAddItemOptions(){
+            addItem = document.querySelector(".addItem");
+            var addItemForCategory = document.createElement("button");
+            addItemForCategory.class="addItemButton";
+            addItemForCategory.appendChild(document.createTextNode("Add an item for this category"));
+            addItem.appendChild(addItemForCategory);
+        }
+    </script>
+
+</body>
+</html>
