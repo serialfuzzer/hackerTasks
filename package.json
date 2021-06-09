@@ -4,6 +4,9 @@
   "description": "hackerTasks is a checklist of the tasks you need to perform when attacking a web application.",
   "author": "Suyogya Khanal",
   "license": "ISC",
+  "scripts":{
+    "start": "node app.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
