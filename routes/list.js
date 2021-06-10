@@ -58,8 +58,12 @@ app.get("/active/:site_id", function(req, res, next){
     if(req.session.loggedIn){
         var user_id = req.session.userInfo.id;
         connection.query("SELECT data from site where site_id = ? and user_id = ?;", [siteId, user_id], function(err,rows,fields){
-            if(!err && rows.length > 0){
+            if(!err){
+                if(rows.length == 0){
+                    res.send({});
+                }else{
                 res.send(rows[0].data)
+                }
             }else{
                 res.send({"message": err.message || error})
             }
