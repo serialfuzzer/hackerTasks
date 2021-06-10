@@ -54,13 +54,14 @@ app.post("/addlist/:id", function(req,res,next){
 
 app.get("/active/:site_id", function(req, res, next){
     var siteId = req.params.site_id;
+    var error = "Error at /active/:site_id"
     if(req.session.loggedIn){
         var user_id = req.session.userInfo.id;
         connection.query("SELECT data from site where site_id = ? and user_id = ?;", [siteId, user_id], function(err,rows,fields){
-            if(!err){
+            if(!err && rows.length > 0){
                 res.send(rows[0].data)
             }else{
-                res.send({"message": err.message})
+                res.send({"message": err.message || error})
             }
         });
     }else{
