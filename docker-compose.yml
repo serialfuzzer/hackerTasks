@@ -27,8 +27,6 @@ services:
       - 31337
     tty: true
     container_name: base
-    volumes:
-      - shared_tmp:/tmp
     depends_on:
       - mysql
     command: ["node", "/hackerTasks/app.js"]
@@ -36,10 +34,6 @@ services:
 
     networks:
       - internalnet
-    
-
-volumes:
-  shared_tmp:
 
 networks:
   internalnet:
