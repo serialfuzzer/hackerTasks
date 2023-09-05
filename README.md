@@ -16,6 +16,12 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
   npm install
   ```
   
+# Update
+
+Due to recent peak in insights and continuous downloads of this project, I've decided to enhance it a little bit.
+In the next few days or weeks I'll be dockerising this repository and I will be improving it a bit.
+
+
 # Running
   After `npm install` is done, it is quite easy to get the app running. Make sure that mariadb is installed and running in your system. Just follow the steps below and get the app running:
   1. Go to the hackerTasks folder
@@ -31,3 +37,4 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
 
 # Contributions
   You're always welcome to contribute to this app if you ever wish to. 
+
