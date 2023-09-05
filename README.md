@@ -8,9 +8,9 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
 - The application supports login and registration
 
 # Installation
-  The application should be installed and running quite easily in linux operating systems if you already have Docker, docker-compose, Node.js  and npm installed. However, if you don't have Node.js and npm already installed, you can [download](https://nodejs.org/en/download/) and install it.
+  The application should be installed and running quite easily in linux operating systems if you already have Docker and docker-compose installed.
   
-  Commands to install all the required dependencies
+  Commands to install and run hackerTasks
   
   1. git clone https://github.com/TheN008/hackerTasks.git && cd hackerTasks
   2. sudo docker-compose up --build
