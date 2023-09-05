@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  mysql:
+    build: mysql
+    container_name: hackerTasks_db
+    volumes:
+      - shared_tmp:/tmp
+    ports:
+      - "3306:3306"
+    expose:
+      - 3
+    environment:
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      SERVICE_NAME: mysql
+    networks:
+      - internalnet
+
+
+  base:
+    build: base
+    ports:
+      - 31337:31337
+    expose:
+      - 31337
+    tty: true
+    container_name: base
+    volumes:
+      - shared_tmp:/tmp
+    depends_on:
+      - mysql
+    command: ["node", "/hackerTasks/app.js"]
+
+
+    networks:
+      - internalnet
+    
+
+volumes:
+  shared_tmp:
+
+networks:
+  internalnet:
+    driver: bridge

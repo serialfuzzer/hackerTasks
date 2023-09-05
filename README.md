@@ -8,26 +8,21 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
 - The application supports login and registration
 
 # Installation
-  The application should be installed quite easily in linux operating systems if you already have Node.js  and npm installed. However, if you don't have Node.js and npm already installed, you can [download](https://nodejs.org/en/download/) and install it.
+  The application should be installed and running quite easily in linux operating systems if you already have Docker, docker-compose, Node.js  and npm installed. However, if you don't have Node.js and npm already installed, you can [download](https://nodejs.org/en/download/) and install it.
   
   Commands to install all the required dependencies
-  ```
-  git clone https://github.com/TheN008/hackerTasks.git && cd hackerTasks
-  npm install
-  ```
+  
+  1. git clone https://github.com/TheN008/hackerTasks.git && cd hackerTasks
+  2. sudo docker-compose up --build
+
+After running these two commands, hackerTasks should be up and running at port 31337. Go to your browser and open http://localhost:31337 and it will open. 
+  
   
 # Update
 
 Due to recent peak in insights and continuous downloads of this project, I've decided to enhance it a little bit.
 In the next few days or weeks I'll be dockerising this repository and I will be improving it a bit.
 
-
-# Running
-  After `npm install` is done, it is quite easy to get the app running. Make sure that mariadb is installed and running in your system. Just follow the steps below and get the app running:
-  1. Go to the hackerTasks folder
-  2. Go to the model/credentials.json and edit it to your mysql database username and password
-  3. Run `node app.js` in the terminal
-  4. Launch http://localhost:8009 or http://0.0.0.0:8009 in your web browser
 
 
 # Screenshots
