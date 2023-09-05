@@ -4,8 +4,6 @@ services:
   mysql:
     build: mysql
     container_name: hackerTasks_db
-    volumes:
-      - shared_tmp:/tmp
     ports:
       - "3306:3306"
     expose:
