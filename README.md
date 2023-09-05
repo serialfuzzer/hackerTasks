@@ -12,7 +12,7 @@ hackerTasks is a checklist of the tasks you need to perform when attacking a web
   
   Commands to install and run hackerTasks
   
-  1. git clone https://github.com/TheN008/hackerTasks.git && cd hackerTasks
+  1. git clone https://github.com/serialfuzzer/hackerTasks.git && cd hackerTasks
   2. sudo docker-compose up --build
 
 After running these two commands, hackerTasks should be up and running at port 31337. Go to your browser and open http://localhost:31337 and it will open. 
