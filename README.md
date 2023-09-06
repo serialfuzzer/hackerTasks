@@ -25,10 +25,15 @@ After running these two commands, hackerTasks should be up and running at port 3
 Due to recent peak in insights and continuous downloads of this project, I've decided to enhance it a little bit.
 In the next few days or weeks I'll be dockerising this repository and I will be improving it a bit.
 
+This project was created many years ago when I was just learning Javascript, so adding new features is like trying to update on top of inefficiently managed code base. However, I'll try my best to push frequent updates to it and try to improve it chunk by chunk.  
+
 # Warning
 
 Access control in features is not implemented in this project. I only recommend to use this for personal usage, quite like a personal note-keeping app.
 Don't host it in public and run it in production.
+
+# Todo Reference (Skipped for now)
+1. Patch SQL Injections
 
 # Screenshots
   ![screenshot1](https://res.cloudinary.com/dgmqiqh19/image/upload/v1693999531/login_vgtwde.jpg)
