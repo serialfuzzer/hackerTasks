@@ -1,11 +1,13 @@
 # hackerTasks
-hackerTasks is a checklist of the tasks you need to perform when attacking a web application. The checklist is copied from https://github.com/1lastBr3ath/tasks & http://mdsec.net/wahh/tasks.html.
+hackerTasks is a checklist of the tasks you need to perform when pentesting a web application. The checklist is copied from https://github.com/1lastBr3ath/tasks & http://mdsec.net/wahh/tasks.html.
 
 # Key Features
 - Checklist is an instance of a website, you can have multiple websites and their own instance of checklist.
 - The checklist stores checked task into a mysql database making the checklist persistent.
 - The application is responsive, the app should look good in most screen sizes.
 - The application supports login and registration
+- Credentials feature to store credentials for a target
+- Cross platform
 
 # Installation
   The application should be installed and running quite easily in linux operating systems if you already have Docker and docker-compose installed.
@@ -29,9 +31,10 @@ Access control in features is not implemented in this project. I only recommend 
 Don't host it in public and run it in production.
 
 # Screenshots
-  ![screenshot1](https://user-images.githubusercontent.com/22111782/46867219-da920980-ce41-11e8-8ecc-cd336712ee97.png)
-  ![screenshot2](https://user-images.githubusercontent.com/22111782/46867252-f72e4180-ce41-11e8-9a48-39af0e739d66.png)
-  ![screenshot3](https://user-images.githubusercontent.com/22111782/46867262-01e8d680-ce42-11e8-8226-7b1aff1b17d0.png)
+  ![screenshot1](https://res.cloudinary.com/dgmqiqh19/image/upload/v1693999531/login_vgtwde.jpg)
+  ![screenshot2](https://res.cloudinary.com/dgmqiqh19/image/upload/v1693999383/dashboard_kpcwmu.jpg)
+  ![screenshot3](https://res.cloudinary.com/dgmqiqh19/image/upload/v1693999534/list_z2sifr.jpg)
+  ![screenshot4](https://res.cloudinary.com/dgmqiqh19/image/upload/v1693999536/Credentials_view_jwhjg4.jpg)
 
 # Contributions
   You're always welcome to contribute to this app if you ever wish to. 
