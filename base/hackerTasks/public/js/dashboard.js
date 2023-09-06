@@ -76,12 +76,13 @@ function size(object) {
                 $(".siteHeading").next().remove();
             }
             removeData();
-            var template = `<li id="i{{siteid}}" class="text-light list-group-item link-item siteItem animated"><a href="list/{{siteid}}" class="btn btn-outline-light" style="max-width:90%; overflow-x:hidden;">{{website}}</a> <a href="" class="delete">&times;</a></li>`;
+            var template = `<li id="i{{siteid}}" class="text-light list-group-item link-item siteItem animated"><a href="list/{{siteid}}" class="btn btn-outline-light" style="max-width:90%; overflow-x:hidden;">{{website}}</a>  <a href="credentials/getCreds/{{siteid}}" class="btn btn-dark text-light btn-outline-dark"> Credentials </a> <a href="" class="delete">&times;</a></li>`;
             var html = "";
             var temp_html;
             for(let i in entries){
                 temp_html = "";
                 temp_html += template.replace("{{website}}", entries[i].site);
+                temp_html = temp_html.replace("{{siteid}}", entries[i].site_id);
                 temp_html = temp_html.replace("{{siteid}}", entries[i].site_id);
                 temp_html = temp_html.replace("{{siteid}}", entries[i].site_id);
                 temp_html += "\n";

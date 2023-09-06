@@ -37,8 +37,23 @@ query("CREATE database if not exists hackertasks")
     }).then(rows=>{
 
         console.log("[4] Created table `site` if it didn't exist");
-
-    }).catch(err=>{
+        return query(`
+        CREATE TABLE IF NOT EXISTS credentials
+        ( 
+            id INT(10) NOT NULL AUTO_INCREMENT,
+            user_id INT(10) NOT NULL,
+            site_id INT(10) NOT NULL,
+            username VARCHAR(200),
+            email VARCHAR(200),
+            password VARCHAR(200),
+            description VARCHAR(200),
+            PRIMARY KEY (id)
+        );
+    `)
+    }).then(rows=>{
+        console.log("[4] Created table `credentials` if it didn't exist");
+    })
+    .catch(err=>{
 
         console.log(`An error just occured with message\n${err.message}`);
 

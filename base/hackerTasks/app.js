@@ -42,12 +42,14 @@ let login = require("./routes/login");
 let user = require("./routes/user");
 let site = require("./routes/site");
 let list = require("./routes/list");
+let credentials = require("./routes/credentials");
 
 
 app.use("/", login);
 app.use("/user", user);
 app.use("/site", site);
 app.use("/list", list);
+app.use("/credentials", credentials);
 
 var server = http.createServer(app);
 server.listen(process.env.port);

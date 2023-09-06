@@ -1,15 +1,3 @@
-/*
-$(window).ready(function(){
-    $(".main").fadeIn();
-    $(".checklist").on("click", 'a',function(){
-        activateItem(this.id);
-        console.log("Clicked")
-    });
-    
-    $("main").hide();
-});
-*/
-
 
 function activateItem(id){
     console.log(id);
